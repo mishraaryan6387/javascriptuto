@@ -48,5 +48,7 @@ console.log(newString2.trim());
 const url = " https"
 
 
+console.log()
+
 // memory
 // stack ( primative), Heap (Non - Primitive) 
