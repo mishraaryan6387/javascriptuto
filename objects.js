@@ -23,7 +23,7 @@ console.log(myObject[mySym]);
 myObject.greeting = function(){
     console.log("Hello Aryan");
 }
-
+  
 console.log(myObject.greeting)
 
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|DOM|</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+        
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("typescript");
+
+    function addOption (langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li);
+        
+    }
+    addOption('python');
+
+    // edit
+
+    // 1st method
+    const newCon = document.querySelector("li:nth-child(2)")
+    // newCon.innerHTML = "MoJO";
+
+    // 2nd method
+    const newli = document.createElement('li');
+    newli.textContent = 'MOjo'
+    newCon.replaceWith(newli);
+
+    //3rd method 
+    const firstElemennt = document.querySelector("li:first-child");
+    firstElemennt.outerHTML = "<li> typescript </li>"
+
+    // remove
+     const firstLang = document.querySelector("li:first-child");
+     firstLang.outerHTML = "<li> typescript </li>"
+     
+</script>
+</html> 

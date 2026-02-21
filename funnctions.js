@@ -19,4 +19,46 @@ function loginuserMesssage (userName){
 
     return `${userName} is just looged in`;
 }
-loginuserMesssage()
+
+
+// const user ={
+//     Name : "Aryan",
+//     price : 78,
+
+// }
+
+function handleObject( anyObject){
+    return console.log(`${anyObject.Name} is the name of the customer and their price is ${anyObject.price}`);
+
+}
+//  handleObject(user);
+
+ // another way to pss object 
+
+ handleObject({
+    Name : "Aryan",
+    price : 4903,
+ })
+
+ const myArray = [200,388,383];
+
+ function returnSecondArray(getArray){
+
+    return console.log(getArray[1]);
+
+ }
+
+ returnSecondArray(myArray);
+
+
+ // Arrow functon
+
+ 
+const addTwo = (num1, num2) =>
+{
+    return num1 + num2;
+}
+
+// const addTwo = (num1,num2) => ( num1+num2);
+ 
+
